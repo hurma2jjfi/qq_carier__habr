@@ -1,0 +1,91 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 10px 20px;
+    height: 80px; 
+  }
+
+  .logout {
+    margin-top: 12px;
+    width: 100%;
+    padding: 8px 0 8px 16px; /* добавлен отступ слева */
+    background-color: transparent;
+    color: #f44336;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    text-align: left; /* выравнивание текста по левому краю */
+  }
+  
+  .logout:hover {
+    background-color: #f4433610; /* полупрозрачный красный фон при наведении */
+  }
+  
+  
+  .navigation {
+    display: flex;
+    align-items: center;
+  }
+
+  .wrap__flex {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+  }
+
+  .wrap__btns {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  
+  .links {
+    display: flex;
+    gap: 20px; 
+    list-style: none; 
+  }
+  
+  a {
+    text-decoration: none; 
+    color: #000; 
+    font-size: 14px; 
+  }
+  
+  .weighter {
+    font-weight: bolder;
+  }
+  
+
+  .icon-map {
+    margin-left: 20px; 
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon-map img {
+    width: 16px; 
+    height: 16px;
+    margin-right: 5px; 
+  }
+  
+  .icon-map span {
+    font-size: 14px; 
+    color: #000; 
+  }
+
+  .register {
+    background-color: #000; 
+    color: #fff; 
+    border: none;
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    font-size: 14px; 
+    cursor: pointer; 
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+  }
+  

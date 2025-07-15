@@ -1,0 +1,134 @@
+.city-modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+.city-modal__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.3);
+  opacity: 0;
+  transition: opacity 0.3s;
+  backdrop-filter: blur(5px);
+}
+
+.city-modal__content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 400px;
+  max-width: 100vw;
+  height: 90vh;
+  background: #fff;
+  border-radius: 16px 0 0 16px;
+  box-shadow: -4px 0 24px rgba(0,0,0,0.08);
+  transform: translateX(100%);
+  transition: transform 0.4s cubic-bezier(.4,0,.2,1);
+  padding: 32px 24px 24px 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.city-modal.open {
+  pointer-events: auto;
+}
+
+.city-modal.open .city-modal__overlay {
+  opacity: 1;
+}
+
+.city-modal.open .city-modal__content {
+  transform: translateX(0);
+}
+
+.city-modal__close {
+  background: none;
+  border: none;
+  font-size: 28px;
+  line-height: 1;
+  cursor: pointer;
+  color: #333;
+  padding: 0;
+  user-select: none;
+}
+
+.city-modal__desc {
+  margin-top: 8px;
+  margin-bottom: 16px;
+  color: #666;
+  font-size: 14px;
+}
+
+.city-modal__search {
+  padding: 8px 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  outline-offset: 2px;
+  outline-color: #0073ff;
+}
+
+.city-modal__list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px 0;
+  flex-grow: 1;
+  overflow-y: auto;
+  border: 1px solid #eee;
+  border-radius: 8px;
+}
+
+.city-modal__item {
+  padding: 10px 16px;
+  cursor: pointer;
+  user-select: none;
+  border-bottom: 1px solid #f0f0f0;
+  transition: background-color 0.2s;
+}
+
+.city-modal__item:last-child {
+  border-bottom: none;
+}
+
+.city-modal__item:hover,
+.city-modal__item:focus {
+  background-color: #f0f8ff;
+  outline: none;
+}
+
+.city-modal__item.selected {
+  background-color: #0073ff;
+  color: white;
+  font-weight: 600;
+}
+
+.city-modal__no-results {
+  padding: 10px 16px;
+  color: #999;
+  font-style: italic;
+}
+
+.city-modal__confirm {
+  padding: 12px 0;
+  background-color: #0073ff;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.3s;
+}
+
+.city-modal__confirm:disabled,
+.city-modal__confirm[aria-disabled="true"] {
+  background-color: #a0c4ff;
+  cursor: not-allowed;
+}

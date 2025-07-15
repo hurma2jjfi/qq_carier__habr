@@ -1,0 +1,221 @@
+.confirm__nav {
+    font-size: 64px;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.why {
+    font-size: 48px;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.paragrapgh {
+    font-size: 20px;
+    color: #717171;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.box__wrapper__grid__roditel {
+    padding: 40px;
+    background: #f9dede;
+    border-radius: 18px;
+    max-width: 1300px;
+    margin: 0 auto;
+    margin-top: 60px;
+  }
+  
+  .box__wrapper__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 40px 32px;
+    padding: 40px 0;
+  }
+  
+  .skill-card {
+    background: #ffeaea;
+    border-radius: 24px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 16px 24px 16px;
+    position: relative;
+    min-height: 220px;
+  }
+  
+  .skill-card__icon {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    color: #000000;
+    font-size: 18px;
+    font-family: monospace;
+    opacity: 0.6;
+  }
+  
+  .skill-card__title {
+    margin-top: 40px;
+    margin-bottom: 32px;
+    font-size: 32px;
+    font-weight: 900;
+    color: #231010;
+    text-align: center;
+  }
+  
+  .skill-card__btn {
+    margin-top: auto;
+    background: #fff;
+    border: none;
+    border-radius: 12px;
+    padding: 12px 0;
+    width: 90%;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    color: #231010;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    transition: background 0.2s;
+  }
+  
+  .skill-card__btn:hover {
+    background: #f2f2f2;
+  }
+  
+
+  .wrap__why__roditel {
+    display: flex;
+    justify-content: center;
+  }
+
+  .wrap__why {
+    width: 1264px;
+    height: 262px;
+    border: 2px solid #D9D9D9;
+    background-color: #fff;
+    border-radius: 50px;
+    margin-top: 40px;
+  }
+
+  .for__center {
+    padding: 51px 288px;
+  }
+  
+  .galka:hover {
+    filter: brightness(10) saturate(100%) invert(0%);
+    transition: filter 0.3s ease;
+  }
+
+  .trenirovka__box__roditel {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+  }
+  
+  .trenirovka__box {
+    width: 1264px;
+    height: 160px;
+    background-color: #ffeaea;
+    border-radius: 25px;
+  }
+
+  .h1__trening {
+    font-size: 24px;
+  }
+
+  .paragraph {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    color: #717171;
+    font-size: 20px;
+  }
+
+  .start__trening {
+    padding: 18px 17px;
+    border: none;
+    background-color: #000000;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 6px;
+    font-weight: bolder;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+  }
+
+  .start__trening:hover {
+    opacity: 80%;
+  }
+
+  .row {
+    display: flex;
+    gap: 183px;
+    justify-content: center;
+    padding-top: 52px;
+    align-items: center;
+  }
+
+  .questions__and__ask {
+    font-size: 48px;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+  }
+
+  .accordion {
+    background: transparent;
+    padding: 0;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+  
+  .accordion__item {
+    border-radius: 16px;
+    border: 1.5px solid #e1cfcf;
+    margin-bottom: 18px;
+    background: #fff;
+    overflow: hidden;
+    transition: box-shadow 0.2s;
+  }
+  
+  .accordion__item.open {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+  }
+  
+  .accordion__question {
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    padding: 24px;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    color: #231010;
+  }
+  
+  .accordion__icon {
+    display: inline-block;
+    transition: transform 0.3s;
+    font-size: 22px;
+    color: #231010;
+  }
+  
+  .accordion__icon.rotated {
+    transform: rotate(180deg);
+  }
+  
